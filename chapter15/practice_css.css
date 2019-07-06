@@ -1,0 +1,116 @@
+@import url(code/css/960_12_col.css);
+@font-face{
+    font-family: "Quicksand-Book";
+    src: url('fonts/Quicksand_Book-webfont.eot')
+            format('embedded-opentype'),
+        url('fonts/Quicksand_Book-webfont.ttf')
+            format('truetype'),
+        url('fonts/Quicksand_Book-webfont.woff')
+            format('woff');
+}
+
+body{
+    background-image: url("images/bg.jpg");
+    font-family: 'Quicksand-Book'; 
+    overflow: scroll;   
+}
+
+header{
+    position: fixed; 
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    background-image: url('images/bg-header.jpg');
+    width: 100%;
+    height: 90px;
+    z-index: 10;  
+}
+main{
+    position: relative;    
+}
+
+#logo{
+    margin-left: 17.3%;
+    margin-top: 25px;
+}
+#inside-triangle{
+    width: 400px;
+    height: 340px;
+    top: 13%;
+    left: 12.5%;
+    background-image: url('images/more3.jpg');
+    z-index: 3;
+    position: absolute; 
+    clip-path: polygon(50% 0,0 100%, 100% 100%);
+}
+#side-triangle{
+    width: 300px;
+    height: 260px;
+    top: 19.2%;
+    left: 42%;
+    transform: rotateZ(180deg) translateY(-18px);
+    background-image: url('images/more3.jpg');
+    opacity: 0.5;
+    z-index: 3;
+    position: absolute; 
+    clip-path: polygon(50% 0,0 100%, 100% 100%);
+}
+nav{
+    float: right;
+    right: 50%;
+    margin-right: 16%;
+}
+ul{
+    margin: 40px;
+}
+
+ li, a {
+    list-style: none;
+    display: inline;
+    color: azure;
+    text-decoration: none;
+    padding-right: 0.1em;
+}
+
+h1{
+    font-size: 0.9;
+    position: absolute;
+    color: azure;
+    float: left;
+    top: 30px;
+    z-index: 3;
+    margin-left: 500px;
+    margin-top: 102px;
+    word-spacing: 1px;
+}
+
+a:hover{
+    color: rgba(255, 102, 0, 0.95);
+}
+
+aside{
+    position: relative;
+    height: 360px;
+    top: 180px;
+    left: 70px;
+    float: left;
+    color: azure;
+    overflow: hidden;    
+}
+hr{
+    position: relative;
+    width: inherit;
+    top: 30px;    
+}
+h2{
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 110%;
+    color: azure;
+}
+.article{
+    position: relative;
+    top: 10px;
+    color: azure;
+    overflow: hidden;
+}
